@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                <img class="logo" src="img/Logo.png" >
+                <h1 class="text-logo">encriptador</h1>
+            </div>
+            <div
+            class="container-encriptador">
+                <div class="encriptador">
+                    <textarea class="input-txt" name="name" style=border:none cols="30" rows="16" placeholder="Ingresa el texto aqui." ></textarea>
+                    <div class="button">
+                        <p class="exclamacion">&#33;Sólo letras minúsculas y sin tildes.</p> 
+                        <button type="button" id="btn-encriptar" onclick="btnencriptar()">Encriptar</button>
+                        <button type="button" id="btn-desencriptar" onclick="btndesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+                <div class="desencriptador">
+                    <div>
+                    <img class="descriptar-img" src="img/encriptar.jpg" onclick="quitar2()" rows="30">
+                    <p class="msj-no-encontrado" onclick="quitar1()">Ningún mensaje fue encontrado</p>
+                    </div>
+                    <div class="end" >
+                        <textarea class="input-txt-encriptado" name="name"  cols="20" rows="5" placeholder="Ingresa el texto que desees encriptar o desencriptar."
+                        style=border:none cols="70" rows="10" ></textarea>
+                        <button class="btn-copiar" 
+                        onclick="btncopiar()">Copiar</button>
+                    </div>
+                </div>
+        </div>
+    
+        <footer class="footer">
+            <p>Realizado por John Jairo Galeano Fontecha</p>
+        </footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
